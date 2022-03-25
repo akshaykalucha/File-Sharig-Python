@@ -1,6 +1,6 @@
 # Wireless File Transfer
 
-I was struggling to transfer my files from windows to mac pc, this project is useful for seamlessly transferrinng files between your old and new pc
+I was struggling to transfer my files from windows to mac pc, this project is useful for seamlessly transferrinng files between your old and new pc when wires are expensive and out of option (which is essentially the reason why i am wriing this)
 
 
 
