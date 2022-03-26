@@ -9,5 +9,9 @@ The structure of directory is maintained through the transfer, you don't need to
 ---
 The client and server machine will require to have the refrence copy of this code installed
 
+## Python use case
+All code is written in default python3 library (any 3x python version should work well), just clone the repo using
+
+
 
 ---
