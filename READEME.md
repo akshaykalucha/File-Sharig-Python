@@ -5,4 +5,9 @@ I was struggling to transfer my files from windows to mac pc, this project is us
 The structure of directory is maintained through the transfer, you don't need to worry about rearranging all your files and documents alltogether again.
 
 
+# Usage
+---
+The client and server machine will require to have the refrence copy of this code installed
+
+
 ---
