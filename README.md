@@ -15,5 +15,8 @@ All code is written in default python3 library (any 3x python version should wor
 ```
 git clone https://github.com/akshaykalucha3/File-Sharig-Python
 ```
+After That, all you need to do is run the script
 
+
+---
 ---
