@@ -23,7 +23,7 @@ to get started!
 
 ---
 
-Keep in mind that this is an making low-level API calls. 
+Keep in mind that this is making low-level API calls. If you have virus protection of any sort, it'll raise red flags. Download at your own discretion.
 
 ---
 ---
