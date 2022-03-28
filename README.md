@@ -22,3 +22,8 @@ py app/app.py
 to get started!
 
 ---
+
+Keep in mind that this is an making low-level API calls. 
+
+---
+---
