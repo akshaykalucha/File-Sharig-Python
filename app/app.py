@@ -30,3 +30,6 @@ def main() -> None:
         del ftclient
     print("\nTransfer complete. You may now exit the program.")
     sleep(10)
+
+if __name__ == "__main__":
+    main()
