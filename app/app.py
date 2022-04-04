@@ -28,3 +28,5 @@ def main() -> None:
         ftclient.send_dir_copy()
 
         del ftclient
+    print("\nTransfer complete. You may now exit the program.")
+    sleep(10)
