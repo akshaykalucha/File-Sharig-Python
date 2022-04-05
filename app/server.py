@@ -14,3 +14,9 @@ class ReceivingServer:
         self._server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._server_socket.bind((self._HOST, protocol_consts.PORT))
         self._transfer_socket = None
+    
+    def listen_and_connect_to_client(self) -> None:
+        self._server_socket.listen()
+        self._transfer_socket, client_addr = self._server_socket.accept()
+
+        print("Sender has connected with address:", client_addr)
