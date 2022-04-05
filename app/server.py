@@ -23,3 +23,7 @@ class ReceivingServer:
     
     def handshake(self) -> None:
         msg = self._transfer_socket.recv(protocol_consts.BYTESIZE_MSG)
+
+        if msg == protocol_consts.MSG_CLIENT_CONF:
+            self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
+            # print("Connection has been accepted by sender.")
