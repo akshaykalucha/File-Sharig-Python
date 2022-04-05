@@ -20,3 +20,6 @@ class ReceivingServer:
         self._transfer_socket, client_addr = self._server_socket.accept()
 
         print("Sender has connected with address:", client_addr)
+    
+    def handshake(self) -> None:
+        msg = self._transfer_socket.recv(protocol_consts.BYTESIZE_MSG)
