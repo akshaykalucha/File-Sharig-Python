@@ -26,4 +26,4 @@ class ReceivingServer:
 
         if msg == protocol_consts.MSG_CLIENT_CONF:
             self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
-            # print("Connection has been accepted by sender.")
+            print("Connection has been accepted by sender.")
