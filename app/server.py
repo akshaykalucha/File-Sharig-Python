@@ -32,3 +32,5 @@ class ReceivingServer:
     
     def _receive_file(self) -> None:
         # File path length
+        pathlen_bytes = self._transfer_socket.recv(protocol_consts.BYTESIZE_PATHLEN)
+        pathlen = int.from_bytes(pathlen_bytes, "big")
