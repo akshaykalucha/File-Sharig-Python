@@ -34,3 +34,4 @@ class ReceivingServer:
         # File path length
         pathlen_bytes = self._transfer_socket.recv(protocol_consts.BYTESIZE_PATHLEN)
         pathlen = int.from_bytes(pathlen_bytes, "big")
+        self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
