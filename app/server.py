@@ -43,3 +43,5 @@ class ReceivingServer:
 
         # File size
         filesize_bytes = self._transfer_socket.recv(protocol_consts.BYTESIZE_FILESIZE)
+        filesize = int.from_bytes(filesize_bytes, "big")
+        self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
