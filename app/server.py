@@ -49,3 +49,7 @@ class ReceivingServer:
         #File data
         filedata_bytes = self._transfer_socket.recv(filesize)
         self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
+
+        # Construct local path with self._DST prefix.
+        fulldstpath = os.path.join(self._DST, noprefixpathname)
+        print("Received file:", fulldstpath)
