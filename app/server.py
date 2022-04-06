@@ -38,3 +38,5 @@ class ReceivingServer:
 
         # File path
         noprefixpathname_bytes = self._transfer_socket.recv(pathlen)
+        noprefixpathname = ''.join(map(chr, noprefixpathname_bytes))
+        self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
