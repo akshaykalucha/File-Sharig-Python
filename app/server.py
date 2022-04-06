@@ -53,3 +53,9 @@ class ReceivingServer:
         # Construct local path with self._DST prefix.
         fulldstpath = os.path.join(self._DST, noprefixpathname)
         print("Received file:", fulldstpath)
+
+        # Make the directories needed in order to write the file and send it.
+        os.makedirs(os.path.dirname(fulldstpath), exist_ok=True)
+
+        with open(fulldstpath, "wb") as dstfile:
+            dstfile.write(filedata_bytes)
