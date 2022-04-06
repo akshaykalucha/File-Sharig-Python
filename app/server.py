@@ -29,3 +29,6 @@ class ReceivingServer:
             print("Connection has been accepted by sender.")
         else:
             raise protocol_exceptions.ServerCouldNotConfirmError("The receiver did not confirm the connection.")
+    
+    def _receive_file(self) -> None:
+        # File path length
