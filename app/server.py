@@ -65,3 +65,7 @@ class ReceivingServer:
         self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
         for _ in range(int.from_bytes(nfiles_bytes, "big")):
             self._receive_file()
+
+    def __del__(self) -> None:
+        self._transfer_socket.close()
+        self._server_socket.close()
