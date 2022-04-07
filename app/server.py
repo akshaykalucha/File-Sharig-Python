@@ -63,3 +63,5 @@ class ReceivingServer:
     def receive_dir(self) -> None:
         nfiles_bytes = self._transfer_socket.recv(protocol_consts.BYTESIZE_NFILES)
         self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
+        for _ in range(int.from_bytes(nfiles_bytes, "big")):
+            self._receive_file()
