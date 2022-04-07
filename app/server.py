@@ -59,3 +59,7 @@ class ReceivingServer:
 
         with open(fulldstpath, "wb") as dstfile:
             dstfile.write(filedata_bytes)
+
+    def receive_dir(self) -> None:
+        nfiles_bytes = self._transfer_socket.recv(protocol_consts.BYTESIZE_NFILES)
+        self._transfer_socket.sendall(protocol_consts.MSG_SERVER_CONF)
