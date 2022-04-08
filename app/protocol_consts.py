@@ -8,3 +8,4 @@ BYTESIZE_FILESIZE = 128 # The size of the message holding the size of the file.
 
 MSG_CLIENT_CONF   = bytearray(map(ord, "CC"))
 MSG_SERVER_CONF   = bytearray(map(ord, "SC"))
+MSG_SERVER_REJECT = bytearray(map(ord, "RE"))
